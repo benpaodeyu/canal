@@ -1,6 +1,6 @@
 FROM  maven:3.6.3-jdk-8  as builder
-WORKDIR  /root
-ADD ./* /root
+WORKDIR  /yu
+ADD ./* /yu/
 RUN  mvn clean package -Dmaven.test.skip -Denv=release
 
 
